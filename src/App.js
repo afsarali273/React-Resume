@@ -1,5 +1,5 @@
-import './App.css';
-import Resume from './components/Resume';
+import "./App.css";
+import Resume from "./components/Resume";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 
@@ -23,9 +23,13 @@ function App() {
 
   return (
     <div>
-        <div className="app__header">
-        <button className="app__button" onClick={handlePrint}>Print</button>
-        <button className="app__button" onClick={downloadPDF}>Download PDF</button>
+      <div className="app__header">
+        <button className="app__button" onClick={handlePrint}>
+          Print
+        </button>
+        <button className="app__button" onClick={downloadPDF}>
+          Download PDF
+        </button>
       </div>
       <Resume />
     </div>
